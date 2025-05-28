@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Test</title>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <style>
+    .container {
+      display: flex;
+      height: 100px;
+      margin-top: 20px;
+    }
+
+    .block1 {
+      width: 100px;
+      background-color: #b2f0f0; /* светло-голубой */
+    }
+
+    .block2 {
+      flex-grow: 1;
+      background-color: #f0e79a; /* светло-жёлтый */
+    }
+  </style>
 </head>
 <body>
-	<h1>Test project</h1>
+  <h1>Test project</h1>
+  <div class="container">
+    <div class="block1"></div>
+    <div class="block2"></div>
+  </div>
 </body>
 </html>
