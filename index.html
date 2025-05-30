@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Test</title>
-  <style>
-    .container {
-      display: flex;
-      height: 100px;
-      margin-top: 20px;
-    }
-
-    .block1 {
-      width: 100px;
-      background-color: #b2f0f0; /* светло-голубой */
-    }
-
-    .block2 {
-      flex-grow: 1;
-      background-color: #f0e79a; /* светло-жёлтый */
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Котостудия</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Test project</h1>
-  <div class="container">
-    <div class="block1"></div>
-    <div class="block2"></div>
-  </div>
+  <header>
+    <nav>
+      <div id="logo">Котостудия</div>
+      <ul>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#booking">Записаться</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Мы фотографируем котиков</h1>
+      <p>Добро пожаловать в «Котостудию» — пространство, где пушистики становятся моделями!</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Галерея</h2>
+      <div class="gallery">
+        <img src="assets/cat 1.webp" alt="Котик 1">
+        <img src="assets/cat 2.webp" alt="Котик 2">
+        <img src="assets/cat 3.webp" alt="Котик 3">
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Записаться на фотосессию</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="catname" placeholder="Имя котика" required>
+        <button type="submit">Записаться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Котостудия.</p>
+  </footer>
 </body>
 </html>
